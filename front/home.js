@@ -1,6 +1,6 @@
 import React from 'react';
  //import Header from './header';
- import { Link } from "react-router-dom";
+
  import Itemcard from './card1';
  import data from '../data';
  
@@ -18,10 +18,10 @@ import React from 'react';
                 {data.productData.map((item, index)=>{
                     return(
                     <Itemcard 
+                        id={item.id}
                         img={item.img}
                          title={item.title} 
-                         desc={item.desc}
-                         price={item.price} 
+                         
                          item={item}
                          key={index} 
                         /> 
